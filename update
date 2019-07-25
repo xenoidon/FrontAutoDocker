@@ -1,0 +1,16 @@
+#!/bin/bash
+
+./clear
+
+if [ -n "$1" ]
+then
+    mkdir ./repo-front
+    git clone $1 ./repo-front
+    cp -r ./repo-front/dp/src ./
+    cp ./repo-front/dp/package.json ./
+    cp ./repo-front/dp/*.js ./
+else
+    echo "example: update {arg}"
+    echo "arg is the project address on  gitLab"
+fi
+

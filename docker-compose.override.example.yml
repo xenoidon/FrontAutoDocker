@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  nginx-spa:
+    build:
+      args:
+        # change it
+        WEB_USER_ID: 1011
+        # change it
+        WEB_USER_NAME: username
+        ASSEMBLY: production
+    volumes:
+      - /opt/logs/nginx/frontend/:/var/log/nginx/
+    ports:
+      - 80:80

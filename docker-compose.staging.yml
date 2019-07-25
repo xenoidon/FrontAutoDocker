@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  nginx-spa:
+    build:
+      args:
+        WEB_USER_ID: 1011
+        WEB_USER_NAME: username
+        ASSEMBLY: production
+    environment:
+      - VIRTUAL_HOST=spa.test.systems
+    ports:
+      - 80:80
+    networks:
+      - default
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external:
+      name: nginx-proxy

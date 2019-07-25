@@ -1,0 +1,15 @@
+###> php-storm ###
+.idea
+###< php-storm ###
+
+###> docker-compose ###
+docker-compose.override.yml
+###< docker-compose ###
+
+###> frontend ###
+package.json
+*.js
+src
+repo-front
+###< frontend ###
+

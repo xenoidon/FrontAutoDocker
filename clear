@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Clear workspace."
+
+rm -rf ./repo-front &>/dev/null
+rm -rf ./src &>/dev/null
+rm -f ./package.json &>/dev/null
+rm -f ./*.js &>/dev/null
+

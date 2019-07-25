@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+  nginx-spa:
+    build:
+      args:
+        WEB_USER_ID: ${WEB_USER_ID}
+        WEB_USER_NAME: gitlab-runner
+        ASSEMBLY: production
